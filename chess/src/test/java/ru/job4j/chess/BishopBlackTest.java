@@ -8,7 +8,7 @@ import ru.job4j.chess.firuges.black.BishopBlack;
 import static org.hamcrest.Matchers.is;
 import static org.hamcrest.Matchers.nullValue;
 import static org.junit.Assert.assertThat;
-import static ru.job4j.chess.firuges.Cell.C8;
+import static ru.job4j.chess.firuges.Cell.*;
 //import static sun.jvm.hotspot.runtime.VMOps.Exit;
 
 public class BishopBlackTest {
@@ -24,6 +24,12 @@ public class BishopBlackTest {
         BishopBlack  bishopBlack = new BishopBlack(C8);
         bishopBlack.copy(Cell.C8);
         assertThat(bishopBlack.position().equals(C8), is(true));
+    }
+    @Test
+    public void whenWayIsDiagonal() {
+        BishopBlack  bishopBlack = new BishopBlack(C1);
+        bishopBlack.way(G5);
+        assertThat(bishopBlack.way(G5), is(new Cell[]{D2,E3,F4,G5}));
     }
 
 }
