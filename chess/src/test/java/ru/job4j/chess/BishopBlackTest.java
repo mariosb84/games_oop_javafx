@@ -28,8 +28,10 @@ public class BishopBlackTest {
     @Test
     public void whenWayIsDiagonal() {
         BishopBlack  bishopBlack = new BishopBlack(C1);
-        bishopBlack.way(G5);
-        assertThat(bishopBlack.way(G5), is(new Cell[]{D2,E3,F4,G5}));
+         //assertThat(bishopBlack.way(D5), is(new Cell[]{B7,C6,D5}));
+         assertThat(bishopBlack.way(G5), is(new Cell[]{D2,E3,F4,G5}));
+        // assertThat(bishopBlack.way(D5), is(new Cell[]{B7,C6,D5}));
+        // assertThat(bishopBlack.way(D5), is(new Cell[]{B7,C6,D5}));
     }
 
 }
