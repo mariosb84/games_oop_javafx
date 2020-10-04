@@ -26,7 +26,7 @@ public class BishopBlackTest {
         assertThat(bishopBlack.position().equals(C8), is(true));
     }
     @Test
-    public void whenWayIsDiagonal() {
+    public void whenWayCorrect() {
           BishopBlack  bishopBlack = new BishopBlack(C1);
         //BishopBlack  bishopBlack1 = new BishopBlack(A8);
         //BishopBlack  bishopBlack2 = new BishopBlack(H8);
@@ -35,6 +35,11 @@ public class BishopBlackTest {
          //assertThat(bishopBlack1.way(D5), is(new Cell[]{B7,C6,D5}));
          //assertThat(bishopBlack2.way(E5), is(new Cell[]{G7,F6,E5}));
          //assertThat(bishopBlack3.way(E4), is(new Cell[]{G2,F3,E4}));
+    }
+    @Test
+    public void whenWayIsDiagonal() {
+        BishopBlack bishopBlack = new BishopBlack(C1);
+        assertThat(bishopBlack.isDiagonal(C1,G5), is(true));
     }
 
 }

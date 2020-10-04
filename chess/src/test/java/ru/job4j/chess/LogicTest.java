@@ -5,6 +5,8 @@ import org.junit.Test;
 import ru.job4j.chess.firuges.Cell;
 import ru.job4j.chess.firuges.black.BishopBlack;
 
+import static ru.job4j.chess.firuges.Cell.C1;
+
 public class LogicTest {
 
     @Ignore
@@ -15,4 +17,5 @@ public class LogicTest {
         logic.add(new BishopBlack(Cell.C1));
         logic.move(Cell.C1, Cell.H6);
     }
+
 }
