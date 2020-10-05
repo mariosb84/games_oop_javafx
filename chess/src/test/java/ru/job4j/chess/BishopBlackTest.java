@@ -22,8 +22,7 @@ public class BishopBlackTest {
     @Test
     public void whenCopyCorrect() {
         BishopBlack  bishopBlack = new BishopBlack(C8);
-        bishopBlack.copy(Cell.C8);
-        assertThat(bishopBlack.position().equals(C8), is(true));
+        assertThat(bishopBlack.copy(C8).position().equals(bishopBlack.position()), is(true));
     }
     @Test
     public void whenWayCorrect() {
