@@ -26,14 +26,14 @@ public class BishopBlackTest {
     }
     @Test
     public void whenWayCorrect() {
-          BishopBlack  bishopBlack = new BishopBlack(C1);
+        BishopBlack  bishopBlack = new BishopBlack(C1);
         //BishopBlack  bishopBlack1 = new BishopBlack(A8);
         //BishopBlack  bishopBlack2 = new BishopBlack(H8);
         //BishopBlack  bishopBlack3 = new BishopBlack(H1);
-           assertThat(bishopBlack.way(G5), is(new Cell[]{D2,E3,F4,G5}));
-         //assertThat(bishopBlack1.way(D5), is(new Cell[]{B7,C6,D5}));
-         //assertThat(bishopBlack2.way(E5), is(new Cell[]{G7,F6,E5}));
-         //assertThat(bishopBlack3.way(E4), is(new Cell[]{G2,F3,E4}));
+        assertThat(bishopBlack.way(G5), is(new Cell[]{D2,E3,F4,G5}));
+        //assertThat(bishopBlack1.way(D5), is(new Cell[]{B7,C6,D5}));
+        //assertThat(bishopBlack2.way(E5), is(new Cell[]{G7,F6,E5}));
+        //assertThat(bishopBlack3.way(E4), is(new Cell[]{G2,F3,E4}));
     }
     @Test
     public void whenWayIsDiagonal() {
